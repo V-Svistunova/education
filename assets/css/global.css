@@ -1,0 +1,79 @@
+html,
+body {
+height: 100%;
+}
+
+.body {	
+  position: relative;
+  background: #FFF;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  overflow-x: hidden;
+  min-width: 320px;
+  transition: all 0.3s ease 0s;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;   
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.no-display {
+  display: none !important;
+}
+.hidden {
+  display: none;
+}
+.for-mobile {
+  display: none;
+}
+.for-tablet {
+  display: none;
+}
+.not-for-mobile {
+  display: block;
+}
+
+@media screen and (max-width: 780px) {
+
+  .for-tablet {
+    display: block;
+  }
+  .container {
+      padding: 0 15px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .for-mobile {
+    display: block;
+  }
+  .not-for-mobile {
+    display: none;
+  }
+  .container {
+      padding: 0 15px;
+  }
+
+}
